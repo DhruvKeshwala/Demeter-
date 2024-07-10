@@ -116,16 +116,33 @@ const data = [
 
 
 const PrivacyLegal: React.FC = () => {
-    const [activeKey, setActiveKey] = useState<string[]>(['1']);
+    const [activeKey, setActiveKey] = useState<string[]>([]);
+
+    const togglePanel = (panelKey: string) => {
+        if (activeKey.includes(panelKey)) {
+            setActiveKey(activeKey.filter(key => key !== panelKey));
+        } else {
+            setActiveKey([...activeKey, panelKey]);
+        }
+    };
 
     const genExtra = (panelKey: string) => {
         const isActive = activeKey.includes(panelKey);
-        return isActive ? <div className="extra_panel_icon"><MinusOutlined /></div> : <div className="extra_panel_icon"><PlusOutlined /> </div>;
+        return isActive ? (
+            <div className="extra_panel_icon" onClick={(event) => { event.stopPropagation(); togglePanel(panelKey); }}>
+                <MinusOutlined />
+            </div>
+        ) : (
+            <div className="extra_panel_icon" onClick={(event) => { event.stopPropagation(); togglePanel(panelKey); }}>
+                <PlusOutlined />
+            </div>
+        );
     };
 
-    const handlePanelChange = (key: string | string[]) => {
+    const handleCollapseChange = (key: string | string[]) => {
         setActiveKey(Array.isArray(key) ? key : [key]);
     };
+  
 
     return (
         <>
@@ -147,7 +164,7 @@ const PrivacyLegal: React.FC = () => {
                 </div>
             </div>
 
-            <Collapse defaultActiveKey={['1']} onChange={handlePanelChange} bordered={false} expandIcon={() => null} className="collapse"  >
+            <Collapse activeKey={activeKey} onChange={handleCollapseChange} bordered={false} expandIcon={() => null} className="collapse"  >
                 <Panel
                     header={<div className="panel_title">1. Applicability</div>}
                     key="1"
@@ -199,7 +216,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">4. What personal data might We hold about You and where do We source such data?</div>}
                     key="4"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('4')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">We will only hold data about You that is relevant in the context of the business relationship which We have with You or with
@@ -249,7 +266,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">5. What will We use Your personal data for and on what legal basis?</div>}
                     key="5"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('5')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">DIH processes Your personal data for various purposes in accordance with the provisions of the DPA, and where
@@ -326,7 +343,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">6. Who We share personal data about You with?</div>}
                     key="6"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('6')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">
@@ -358,7 +375,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">7. How long do We store personal data for?</div>}
                     key="7"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('7')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">We will retain Your personal data for as long as required to fulfil the purposes for which the data was collected,
@@ -397,7 +414,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">8. What are Your rights in relation to the personal data? </div>}
                     key="8"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('8')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">You will have certain rights in relation to Your personal data. Some of these rights will only apply in certain
@@ -482,7 +499,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">9. Marketing communications</div>}
                     key="9"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('9')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">We may use Your personal data to give You information about products and services offered by Us or Our affiliates that
@@ -499,7 +516,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">10. Are You under an obligation to provide Us with Your personal data?</div>}
                     key="10"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('10')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">You are not required by law to provide Us with Your personal data. However, if You refuse to do so We may not be able
@@ -514,7 +531,7 @@ const PrivacyLegal: React.FC = () => {
                     header={<div className="panel_title">11. Amendment to this Statement</div>}
                     key="11"
                     className="privacy_panel"
-                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('1')}</div>}
+                    extra={<div onClick={(e) => e.stopPropagation()}>{genExtra('11')}</div>}
                 >
                     <div >
                         <p className="privacy_spaces">This Statementmay be amended by DIH from time to time. Amendmentsshall take effect on the date specified in the
