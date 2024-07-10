@@ -1,0 +1,264 @@
+/* ====================================================  Common css for auth page =================================================== */
+
+.login_container {
+  height: 100vh;
+}
+
+.row {
+  height: 100%;
+}
+
+.title_section {
+  text-align: center;
+}
+
+.logo_col {
+  height: 100vh;
+  padding: 15px;
+}
+
+.logo_container {
+  background-color: #333;
+  text-align: center;
+  padding: 70px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.under_img {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30%;
+  overflow: hidden;
+}
+
+.graph_logo {
+  position: absolute;
+  bottom: 0;
+  right: -69px;
+  z-index: -1;
+}
+
+.form_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 48px;
+  margin-bottom: 15px !important;
+  margin: 0;
+  color: var(--title-color);
+}
+
+.description {
+  color: var(--text-color);
+  margin-bottom: 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+}
+
+.form_container {
+  max-width: 400px;
+  width: 100%;
+  font-family: var(--font-family);
+}
+
+
+.ant-alert-error,
+.anticon-close {
+  color: var(--error-color) !important;
+  font-family: var(--font-family) !important;
+  border: none !important;
+  background-color: #faebeb !important;
+}
+
+.alert_div {
+  margin-bottom: 20px;
+}
+
+/* ==================================================== Signin css =================================================== */
+
+.forgot_password {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: var(--title-color);
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.input .anticon {
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.form_control label {
+  color: var(--text-color) !important;
+  font-family: var(--font-family) !important;
+}
+
+.input {
+  border-radius: 12px !important;
+  height: 64px !important;
+  padding: 0;
+}
+
+.form_control input {
+  color: var(--text-color) !important;
+  padding: 10px !important;
+  border-radius: 12px 0 0 12px !important;
+  font-family: var(--font-family) !important;
+  font-size: 16px !important;
+}
+
+.ant-input-outlined:hover,
+.ant-input-outlined:focus,.ant-input-outlined:focus-within{
+  border-color: var(--fill-button-color) !important;
+  box-shadow: rgb(249, 249, 249) 0px 0px 0px 1000px inset;
+}
+
+.ant-form-item
+  .ant-form-item-label
+  > label.ant-form-item-required:not(
+    .ant-form-item-required-mark-optional
+  )::before {
+  content: "" !important;
+}
+
+.ant-form-item .ant-form-item-label > label::after {
+  font-size: 18px !important;
+  height: 23px !important;
+  content: "*";
+  color: red;
+}
+
+.ant-form-vertical
+  .ant-form-item:not(.ant-form-item-horizontal)
+  .ant-form-item-label
+  > label::after {
+  visibility: visible;
+}
+
+/* ==================================================== VerifictionCode css =================================================== */
+
+.otp_container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.otp_container input {
+  width: 56px !important;
+  height: 56px !important;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #eeeeee;
+  background: #f9f9f9 !important;
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+  margin: 10px 4px 0;
+  font-family: var(--font-family) !important;
+}
+
+.otp_container input:focus,
+.otp_container input:hover {
+  border-color: var(--fill-button-color);
+  outline: none;
+}
+.resend_otp_div {
+  margin: 15px 0 22px;
+  font-family: var(--font-family) !important;
+}
+.otp_time {
+  color: var(--text-color) !important;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.resend_otp {
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+}
+/* ============================================== Reset Pass success ============================== */
+
+.forgot_description {
+  margin-bottom: 50px;
+}
+.forgot_form_control {
+  margin-bottom: 48px;
+}
+/* ============================================== newPass success ============================== */
+
+.newpassword_fill_btn {
+  margin-top: 25px;
+}
+
+/* ============================================== Reset Pass success ============================== */
+
+.resetpass_img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.resetpass_fill_button {
+  margin-top: 20px;
+}
+
+/* ============================================== @media query ============================== */
+@media screen and (max-width: 1030px) {
+  .logo_col {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .logo_container {
+    height: 720px !important;
+  }
+  .under_img {
+    height: 100%;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .form_container {
+    max-width: 500px;
+    width: 100%;
+    font-family: var(--font-family);
+  }
+  .form_col {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .logo_col {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .otp_container input {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .title {
+    font-size: 30px !important;
+  }
+  .description {
+    font-size: 14px !important;
+  }
+  .form_col {
+   
+    padding: 23px !important;
+  
+}
+}

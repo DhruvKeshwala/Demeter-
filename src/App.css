@@ -1,0 +1,222 @@
+/* nunito-300 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-300.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-300.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-300.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-300.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-300.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-300.svg#Nunito") format("svg");
+}
+/* nunito-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-regular.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-regular.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-regular.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-regular.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-regular.svg#Nunito")
+      format("svg");
+}
+/* nunito-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-500.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-500.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-500.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-500.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-500.svg#Nunito") format("svg");
+}
+/* nunito-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-600.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-600.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-600.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-600.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-600.svg#Nunito") format("svg");
+}
+/* nunito-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-700.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-700.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-700.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-700.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-700.svg#Nunito") format("svg");
+}
+/* nunito-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-800.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-800.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-800.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-800.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-800.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-800.svg#Nunito") format("svg");
+}
+/* nunito-900 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/nunito/nunito-v26-latin-900.eot");
+  src: url("./assets/fonts/nunito/nunito-v26-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-900.woff2") format("woff2"),
+    url("./assets/fonts/nunito/nunito-v26-latin-900.woff") format("woff"),
+    url("./assets/fonts/nunito/nunito-v26-latin-900.ttf") format("truetype"),
+    url("./assets/fonts/nunito/nunito-v26-latin-900.svg#Nunito") format("svg");
+}
+
+/* ====================================================  Common css for auth page =================================================== */
+:root {
+  --text-color: #757575;
+  --title-color: #1b2229;
+  --fill-button-color: #ae8f73;
+  --outline-button-color: #ae8f73;
+  --error-color: #b11515;
+  --title-font-size: 48px;
+  --text-font-size: 48px;
+  --text-font-weight: 500;
+  --font-family: "Nunito" !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.ant-layout {
+  font-family: "Nunito" !important;
+  background: #fff !important;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fill_button {
+  width: 100%;
+  background-color: var(--fill-button-color);
+  border: none;
+}
+
+.fill_button:hover,
+.fill_button:focus-visible,
+.fill_button:active {
+  background-color: var(--fill-button-color) !important;
+  outline: 4px solid transparent !important;
+}
+
+.outline_button {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--outline-button-color);
+  color: var(--fill-button-color);
+  font-weight: 600;
+}
+
+.outline_button:hover,
+.outline_button:focus-visible,
+.outline_button:active {
+  background-color: var(--fill-button-color) !important;
+  color: white !important;
+}
+
+.basic_design {
+  padding: 32.2px 0;
+  border-radius: 12px;
+  box-shadow: none;
+  font-family: var(--font-family);
+  width: 100%;
+  font-size: 16px !important;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.download_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.download_file {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.download_file .ant-select-single,
+.download_file .ant-select-selector .ant-select-selection-search-input {
+  font-size: 16px !important;
+  height: 45px !important;
+}
+.download_file .ant-select-selection-placeholder {
+  font-size: 16px !important;
+}
+.download_file .ant-select-single .ant-select-selector {
+  border-radius: 12px !important;
+  width: 100px !important;
+  height: 100% !important;
+  background-color: #f9f9f9 !important;
+  border-color: #eeeeee !important;
+  font-family: var(--font-family) !important;
+}
+.download_text {
+  font-size: 16px !important;
+  font-weight: 500;
+}
+.download_button {
+  margin-bottom: 0 !important;
+  font-family: var(--font-family) !important;
+}
+.download_fill_button {
+  height: 56px !important;
+  padding: 16px 32px !important;
+}
+.ant-btn-primary:disabled,.ant-btn-primary.ant-btn-disabled {
+  cursor: not-allowed;
+  border-color: #d9d9d9;
+  color: #ffffff !important;
+  background: #ae8d73d3 !important;
+  box-shadow: none;
+}
+@media screen and (max-width: 500px) {
+  .basic_design {
+    padding: 30px 0;
+    font-size: 16px !important;
+  }
+}

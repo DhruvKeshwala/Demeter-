@@ -1,0 +1,571 @@
+.account_details,
+.account_top_box {
+  border: 1px solid #eeeeee;
+  padding: 16px;
+  border-radius: 10px;
+}
+.account_top_box {
+  width: 352px;
+  margin-bottom: 35px;
+}
+.account_top_box .ant-select {
+  height: 45px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: var(--font-family) !important;
+}
+.ant-select-selection-item {
+  font-weight: 500 !important;
+}
+.account_top_box .ant-select-selector:hover,
+.ant-select-selector:focus-visible {
+  border-color: var(--outline-button-color) !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+.ant-select-focused {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.ant-select-outlined:hover .ant-select-selector {
+  border-color: var(--outline-button-color) !important;
+}
+.account_under_title {
+  margin-bottom: 13px !important;
+}
+.top_title {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 12px;
+}
+.account_details .ant-form-item-row {
+  border: 1px solid #eeeeee;
+  padding: 10px 15px !important;
+  height: 76px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.account_top_box .ant-form-item , .account_details .ant-form-item {
+  margin-bottom: 0 !important;
+}
+.account_details .ant-row {
+  display: flex !important;
+  align-items: start !important;
+  justify-content: start !important;
+  overflow: hidden !important;
+}
+.account_details_form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-row {
+  flex-direction: row !important;
+}
+
+.account_details_form .ant-form-item-label {
+  padding: 0 !important;
+  font-size: 16px !important;
+  font-weight: 500;
+  font-family: var(--font-family) !important;
+}
+
+.account_details_form .ant-input {
+  border: none !important;
+  background-color: transparent !important;
+  padding: 0 !important;
+  color: #757575 !important;
+  font-size: 16px !important;
+  font-weight: 500;
+  font-family: var(--font-family) !important;
+}
+
+.account_details .ant-form-item .ant-form-item-control-input {
+  align-items: start !important;
+}
+
+.account_details .ant-form-item .ant-form-item-label > label::after {
+  font-size: 18px !important;
+  height: 23px !important;
+  content: "";
+  color: red;
+}
+.ant-input-outlined:focus {
+  box-shadow: 0 0 0 2px transparent !important;
+}
+
+/* =================================================== Reports ============================================================== */
+
+.report_top_boxs {
+  display: flex;
+  gap: 35px;
+}
+
+.report_top_boxs .ant-picker {
+  height: 45px !important;
+  min-width: 100% !important;
+  font-family: var(--font-family) !important;
+}
+:where(.css-dev-only-do-not-override-f7vrd6).ant-space-vertical {
+  flex-direction: column;
+  width: 100% !important;
+}
+.ant-picker-outlined:hover,
+.ant-picker-outlined:focus {
+  border-color: var(--fill-button-color);
+  background-color: initial !important;
+}
+.report_table {
+  margin-top: 35px;
+}
+.ant-table {
+  overflow: hidden !important;
+  border: 1px solid #eeeeee !important;
+  border-radius: 12px !important;
+  font-family: var(--font-family) !important;
+}
+.ant-table-thead .ant-table-cell {
+  font-size: 20px !important;
+}
+.ant-table-tbody .ant-table-cell {
+  font-size: 16px !important;
+  color: #757575 !important;
+  font-weight: 500;
+}
+
+/* ========================================================== Settings ================================================================== */
+
+.setting_section {
+  border: 1px solid #eeeeee;
+  padding: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.setting .ant-tabs {
+  font-family: var(--font-family) !important;
+}
+
+.setting_button {
+  display: flex;
+  justify-content: end !important;
+  margin-top: 10px;
+}
+
+.setting_fill_button {
+  width: 140px;
+}
+
+.setting_input input,
+.modal_input .ant-select.ant-select-in-form-item {
+  width: 35%;
+  height: 64px !important;
+  border-radius: 12px !important;
+  border: 1px solid #eeeeee !important;
+  font-size: 16px !important;
+  color: #757575 !important;
+  background-color: #f9f9f9 !important;
+  font-family: var(--font-family) !important;
+}
+
+.setting_form label {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: #757575 !important;
+  font-family: var(--font-family) !important;
+}
+
+.setting_table .action {
+  text-align: center !important;
+}
+
+.ant-tabs-tab-btn {
+  color: #757575;
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1b2229 !important;
+  text-shadow: none !important;
+  font-weight: 500 !important;
+}
+
+.ant-tabs-nav::before {
+  border-bottom: 2px solid #f0f0f0 !important;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+  position: absolute;
+  background: #ae8f73 !important;
+  height: 3px !important;
+  border-radius: 10px !important;
+  pointer-events: none;
+}
+
+/* ==================== setting email =============== */
+.modal_input input {
+  width: 100% !important;
+}
+
+.modal_input .ant-form-item-control {
+  margin-bottom: 20px;
+}
+
+.modal_input .ant-select.ant-select-in-form-item,
+.modal_input .ant-select-single .ant-select-selector {
+  border-radius: 12px !important;
+  width: 100% !important;
+}
+
+.action_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action_btn {
+  border: none;
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.ant-table-content {
+  scrollbar-width: none !important;
+}
+
+.change_email_title {
+  font-family: "Nunito" !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+}
+
+.change_email_dis {
+  font-family: "Nunito" !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  text-align: center;
+  color: #757575 !important;
+  margin-bottom: 15px;
+}
+
+.ant-modal-content {
+  padding: 40px 40px 24px 40px !important;
+}
+
+.ant-modal-root .ant-modal-mask {
+  backdrop-filter: blur(10px) !important;
+}
+
+.ant-modal .ant-modal-close {
+  height: 30px !important;
+  width: 30px !important;
+  background-color: #ae8d7365 !important;
+  border-radius: 100% !important;
+  color: #ae8f73 !important;
+}
+
+.ant-modal-close .anticon-close {
+  background-color: transparent !important;
+  color: #ae8f73 !important;
+}
+
+.modalotp_container {
+  max-width: 100% !important;
+}
+
+.otp_button {
+  margin-bottom: 16px;
+}
+
+.delete_button_section {
+  display: flex;
+  justify-content: space-between !important;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.delete_button_section .ant-form-item {
+  width: 100% !important;
+}
+
+.delete_img {
+  margin: auto;
+  text-align: center;
+}
+
+/* ================= setting contact ================ */
+
+.contact_section {
+  margin-top: 20px;
+}
+
+.contact_button {
+  width: fit-content !important;
+  margin-left: auto;
+}
+
+.contact_btn {
+  padding: 32.2px 40px !important;
+  margin-top: 30px;
+}
+
+.contact_section .ant-input-password {
+  background-color: #f9f9f9 !important;
+  border: 1px solid #eeeeee !important;
+}
+
+/* ================= setting new passowrd ================ */
+
+.newpassword_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.password_buttons {
+  width: 20% !important;
+  margin-left: auto;
+}
+
+/* ============================================ privacy Legal ===================================================================== */
+.privacy_statement {
+  width: Fill (1, 116px) px;
+  height: Hug (463px) px;
+  padding: 24px;
+  border-radius: 10px;
+  opacity: 0px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+}
+.privacy_title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 31.2px;
+  text-align: left;
+}
+
+.privacy_paragraph {
+  padding-top: 30px !important;
+}
+
+strong {
+  color: #000;
+  font-size: 16px !important;
+}
+.privacy_spaces {
+  margin-bottom: 15px;
+  font-family: "Nunito" !important;
+  font-size: 16px !important;
+  font-weight: 500;
+  line-height: 24px;
+  color: #757575;
+}
+.panel_title {
+  font-size: 24px;
+  font-weight: 600 !important;
+  text-align: left;
+  font-family: "Nunito" !important;
+}
+/* p.css */
+.privacy_panel {
+  background: #f9f9f9; /* Example background color */
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: none !important;
+}
+.extra_panel_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 100px;
+  background-color: #eae6de;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ae8f73;
+}
+.collapse {
+  background-color: transparent !important;
+}
+
+.privacy_key_table .ant-table-wrapper .ant-table-thead > tr > th,
+.ant-table-wrapper .ant-table-thead > tr > td {
+  background: #ffffff !important;
+}
+
+.description_list {
+  padding-left: 40px;
+}
+.description_list li {
+  margin: 8px 0;
+}
+.description_client_data {
+  font-style: italic;
+}
+.description_data_controller {
+  font-size: 16px;
+  color: #222;
+}
+.privacy_under_title {
+  font-family: "Nunito" !important;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.ant-collapse-header {
+  align-items: center !important;
+}
+@media screen and (max-width: 1840px) {
+  .password_buttons {
+    width: 30% !important;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .layout_open .account_details_form {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .account_details .ant-form-item {
+    margin-bottom: 10px !important;
+  }
+  .site_content {
+    padding: 20px 15px !important;
+  }
+  .setting_input input {
+    width: 100% !important;
+  }
+  .password_buttons {
+    width: 50% !important;
+    margin-left: auto;
+  }
+  .newpassword_section {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .report_top_boxs {
+    display: flex;
+    gap: 13px !important;
+  }
+}
+@media screen and (max-width: 668px) {
+  .report_top_boxs {
+    display: block !important;
+    gap: 13px !important;
+  }
+  .account_top_box {
+    width: auto !important;
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .site_content {
+    padding: 15px 10px !important;
+  }
+  .account_details_form {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .account_details {
+    padding: 12px 10px !important;
+  }
+  .account_details .ant-form-item-row {
+    padding: 2px 7px !important;
+    height: 62px !important;
+  }
+  .account_details .ant-form-item {
+    margin-bottom: 0px !important;
+  }
+  .account_top_box {
+    width: auto !important;
+    margin-bottom: 35px;
+  }
+  .account_under_title {
+    font-size: 18px !important;
+  }
+  .report_top_boxs,
+  .download_section {
+    display: block !important;
+    gap: 0px;
+    margin-bottom: 20px !important;
+  }
+  .reports_box {
+    margin-bottom: 10px !important;
+  }
+  .download_file {
+    margin-bottom: 10px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+  .ant-table-thead .ant-table-cell {
+    font-size: 18px !important;
+  }
+  .ant-table-tbody .ant-table-cell {
+    font-size: 14px !important;
+    color: #757575 !important;
+  }
+
+  .setting_input input {
+    width: 100% !important;
+  }
+  .ant-table-wrapper .ant-table-pagination-right {
+    justify-content: center !important;
+  }
+  .setting_fill_button {
+    width: 90px !important;
+  }
+  .download_fill_button {
+    height: 38px !important;
+    padding: 25px 40px !important;
+  }
+  .change_email_dis {
+    font-size: 13px !important;
+    text-align: center;
+  }
+  .change_email_title {
+    font-size: 24px !important;
+    margin-top: 40px;
+  }
+  .ant-modal-content {
+    padding: 20px 24px !important;
+  }
+  .contact_button {
+    width: fit-content !important;
+    margin-left: auto;
+  }
+  .contact_btn {
+    padding: 30px 18px !important;
+  }
+  .newpassword_section {
+    display: block !important;
+  }
+  .delete_button_section {
+    gap: 16px !important;
+  }
+  .password_buttons {
+    width: 100% !important;
+  }
+  .privacy_statement {
+    padding: 12px !important;
+  }
+  .privacy_title {
+    font-size: 17px !important;
+  }
+  .privacy_spaces,
+  strong {
+    font-size: 13px !important;
+  }
+  .panel_title {
+    font-size: 14px !important;
+  }
+}
